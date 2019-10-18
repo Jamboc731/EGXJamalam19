@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
     public void Toot()
     {
-        rb.AddForce(-transform.right * tootForce, ForceMode2D.Impulse);
+        rb.AddForce(transform.right * tootForce, ForceMode2D.Impulse);
     }
 
     public void PickUp(Weapon pickedUp)
