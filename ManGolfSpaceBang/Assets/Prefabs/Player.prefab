@@ -30,6 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1854413684941440206}
+  - {fileID: 4001949585609085347}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -69,6 +70,36 @@ MonoBehaviour:
   tootForce: 0
   rotT: 0
   playerNo: 49
+--- !u!1 &7147375990673053659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4001949585609085347}
+  m_Layer: 0
+  m_Name: Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4001949585609085347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7147375990673053659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.684, z: 0.358}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3090496147036224868}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1854413684941053512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79,6 +110,18 @@ PrefabInstance:
     - target: {fileID: 100006, guid: 0e3cdb0e60f0b3247841a19dba209dab, type: 3}
       propertyPath: m_Name
       value: RedNeck1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0e3cdb0e60f0b3247841a19dba209dab, type: 3}
+      propertyPath: m_Name
+      value: RedNeckBody1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0e3cdb0e60f0b3247841a19dba209dab, type: 3}
+      propertyPath: m_Name
+      value: RedneckEye
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0e3cdb0e60f0b3247841a19dba209dab, type: 3}
+      propertyPath: m_Name
+      value: RedneckEye1
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 0e3cdb0e60f0b3247841a19dba209dab, type: 3}
       propertyPath: m_LocalPosition.x
