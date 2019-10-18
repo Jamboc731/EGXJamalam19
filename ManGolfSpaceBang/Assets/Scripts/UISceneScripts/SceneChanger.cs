@@ -3,6 +3,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+public enum Scenes{
+    MainMenu
+}
+
 public class SceneChanger : MonoBehaviour
 {
 
@@ -30,6 +34,11 @@ public class SceneChanger : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void Quit()
