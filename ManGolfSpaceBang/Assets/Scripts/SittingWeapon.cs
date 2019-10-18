@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //class name unclear. this script is for weapons that have not currently been 
-public class SittingWeapon : MonoBehaviour
+public class SittingWeapon : MonoBehaviour, Pickupable
 {
-    // Start is called before the first frame update
-    void Start()
+
+    Weapon wep;
+
+    public void AssignWeapon(Weapon w)
     {
-        
+        wep = w;
     }
 
-    // Update is called once per frame
-    void Update()
+    public Weapon PickedUp()
     {
-        
+        Destroy(gameObject);
+        return wep;
+
     }
+
 }
