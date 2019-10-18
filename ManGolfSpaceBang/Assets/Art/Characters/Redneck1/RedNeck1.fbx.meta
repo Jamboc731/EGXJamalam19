@@ -7,20 +7,26 @@ ModelImporter:
     100002: Low:RedneckEye
     100004: Low:RedneckEye1
     100006: //RootNode
+    100008: Low:Helm
     400000: Low:RedNeckBody1
     400002: Low:RedneckEye
     400004: Low:RedneckEye1
     400006: //RootNode
+    400008: Low:Helm
     2100000: lambert1
+    2100002: Low_lambert1
     2300000: Low:RedNeckBody1
     2300002: Low:RedneckEye
     2300004: Low:RedneckEye1
+    2300006: Low:Helm
     3300000: Low:RedNeckBody1
     3300002: Low:RedneckEye
     3300004: Low:RedneckEye1
+    3300006: Low:Helm
     4300000: Low:RedneckEye
     4300002: Low:RedNeckBody1
     4300004: Low:RedneckEye1
+    4300006: Low:Helm
   externalObjects:
   - first:
       type: UnityEngine:Material
