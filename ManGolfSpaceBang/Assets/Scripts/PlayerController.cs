@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
 
     string hor;
     string fire;
+    string toot;
 
     Weapon equipped;
 
@@ -32,13 +33,15 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         hor = string.Concat(playerNo, "Horizontal");
         fire = string.Concat(playerNo, "Fire");
+        toot = string.Concat(playerNo, "Toot");
 
     }
 
     private void Update()
     {
         xIn = Input.GetAxisRaw(hor);
-
+        if (Input.GetButtonDown(fire)) Fire();
+        if (Input.GetButtonDown(toot)) Toot();
     }
 
     private void FixedUpdate()
@@ -51,6 +54,12 @@ public class PlayerController : MonoBehaviour
         Debug.Log("player " + playerNo + " fired");
 
         if (equipped != null) equipped.Fire(); 
+
+    }
+
+    public void Toot()
+    {
+        rb.AddForce(-transform.right * tootForce, ForceMode2D.Impulse);
     }
 
     public void PickUp(Weapon pickedUp)
