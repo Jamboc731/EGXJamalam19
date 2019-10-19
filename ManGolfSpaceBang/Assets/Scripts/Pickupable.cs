@@ -5,6 +5,8 @@ using UnityEngine;
 public interface Pickupable
 {
 
-    void PickedUp();
+    Weapon PickedUp();
+
+    void AssignWeapon(Weapon w);
 
 }
