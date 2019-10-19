@@ -11,7 +11,11 @@ public class PlayerController : MonoBehaviour
     [Tooltip("The force exerted on the player when they do a cute lil toot in their soot")]
     [SerializeField] float tootForce;
 
+    [SerializeField] Transform weaponPoint;
+
     Rigidbody2D rb;
+
+    [SerializeField] Transform firePoint;
 
     float xIn;
 
@@ -54,7 +58,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("player " + playerNo + " fired");
 
-        if (equipped != null) equipped.Fire(transform.position, transform.rotation);
+        if (equipped != null) equipped.Fire(transform.position, firePoint.transform);
         rb.AddForce(-transform.right * equipped.GetFireForce());
 
     }
@@ -71,6 +75,9 @@ public class PlayerController : MonoBehaviour
     public void PickUp(Weapon pickedUp)
     {
         equipped = pickedUp;
+        GameObject t = Instantiate(equipped.Model(), weaponPoint.transform);
+        t.transform.localPosition = Vector3.zero;
+        t.transform.localEulerAngles = new Vector3(0, 90, 0);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

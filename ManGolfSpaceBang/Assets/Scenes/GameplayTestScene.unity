@@ -238,9 +238,9 @@ MonoBehaviour:
   fireForce: 400
   forceRatio: 0.25
   model: {fileID: 100000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
-  projectileCount: 15
+  projectileCount: 8
   pLifetime: 1
-  spread: 45
+  spread: 11.5
   projectilePrefab: {fileID: 5710825236299878077, guid: 27f76368d7c794949aba7712889c8427,
     type: 3}
   firePoint: {x: -0.25, y: -0.4, z: 0}
@@ -1691,38 +1691,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041539022}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &492433873524927137 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 492433873524927137, guid: d8885c1f4844ee342aca1c2e3a9891f8,
-    type: 3}
-  m_PrefabInstance: {fileID: 6588946662186803021}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &492433873524927138
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492433873524927137}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.060873717, y: 0.83835196}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.87825257, y: 1.8113084}
-  m_EdgeRadius: 0
 --- !u!1001 &6588946662186803021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1789,36 +1757,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090496147036224868, guid: d8885c1f4844ee342aca1c2e3a9891f8,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.62628
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090496147036224868, guid: d8885c1f4844ee342aca1c2e3a9891f8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.62628
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090496147036224868, guid: d8885c1f4844ee342aca1c2e3a9891f8,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.62628
-      objectReference: {fileID: 0}
-    - target: {fileID: 3636979833613915823, guid: d8885c1f4844ee342aca1c2e3a9891f8,
-        type: 3}
-      propertyPath: m_Mass
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3074715647471790139, guid: d8885c1f4844ee342aca1c2e3a9891f8,
-        type: 3}
-      propertyPath: rotT
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3074715647471790139, guid: d8885c1f4844ee342aca1c2e3a9891f8,
-        type: 3}
-      propertyPath: tootForce
-      value: 5.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8885c1f4844ee342aca1c2e3a9891f8, type: 3}

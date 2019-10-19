@@ -23,18 +23,18 @@ public class Shotgun : Weapon
     Rigidbody2D pRb; //projectile rb
     Transform pT; // projectile transform
 
-    public override void Fire(Vector3 pos, Quaternion rot)
+    public override void Fire(Vector3 pos, Transform t)
     {
-        base.Fire(pos, rot);
+        base.Fire(pos, t);
 
         for (int i = 0; i < projectileCount; i++)
         {
-            pT = Instantiate(projectilePrefab, pos + firePoint, transform.rotation).transform;
+            pT = Instantiate(projectilePrefab, t.position, t.rotation).transform;
             Destroy(pT.gameObject, pLifetime);
             //Debug.Log(pRb);
             //Debug.Log((firePoint + (firePoint * (spread / 45))).normalized);
             //transform.rotation = Quaternion.AngleAxis(Random.Range(-spread/2, spread/2), Vector3.forward);
-            pT.GetComponent<Projectile>().Fired(fireForce * (1 - forceRatio), (transform.right + (transform.up * spread /45 )).normalized);
+            pT.GetComponent<Projectile>().Fired(fireForce * (1 - forceRatio), ((((t.up * 1/*(Random.Range(-spread/45, spread/45))*/) + t.right).normalized) + t.up * (Random.Range(-spread / 45, spread / 45))).normalized);
             //Debug.Log(pT.forward * fireForce * (1 - forceRatio));
 
 
