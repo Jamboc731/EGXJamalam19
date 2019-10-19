@@ -5,10 +5,10 @@ using UnityEngine;
 public class PunchyBoi : Weapon
 {
 
-    public override void Fire(Vector3 pos, Quaternion rot)
+    public override void Fire()
     {
 
-        base.Fire(pos, rot);
+        base.Fire();
 
 
 
