@@ -98,4 +98,9 @@ public class PlayerController : MonoBehaviour
         fartsInChamber += val;
     }
 
+    public void ApplyForce(Vector2 force)
+    {
+        rb.AddForce(force);
+    }
+
 }

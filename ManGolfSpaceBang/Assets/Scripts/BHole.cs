@@ -11,14 +11,26 @@ public class BHole : MonoBehaviour
     [Tooltip("The dominating power of the bHole")]
     [SerializeField] float power;
 
+    List<PlayerController> players = new List<PlayerController>();
+
     private void Start()
     {
-        //foreach()
+        foreach (var g in GameObject.FindObjectsOfType<PlayerController>())
+        {
+            players.Add(g);
+        }
     }
 
     private void FixedUpdate()
     {
-        
+        foreach (var i in players)
+        {
+            Vector2 t = i.transform.position;
+            if(t.magnitude < bHoleRadius)
+            {
+                i.ApplyForce(t.normalized * power);
+            }
+        }
     }
 
 }
