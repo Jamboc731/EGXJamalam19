@@ -60,7 +60,11 @@ public class PlayerController : MonoBehaviour
 
     public void Toot()
     {
-        rb.AddForce(transform.right * tootForce, ForceMode2D.Impulse);
+        if(fartsInChamber > 0)
+        {
+            rb.AddForce(transform.right * tootForce, ForceMode2D.Impulse);
+            fartsInChamber--;
+        }
     }
 
     public void PickUp(Weapon pickedUp)
