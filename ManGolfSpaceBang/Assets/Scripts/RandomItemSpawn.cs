@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class RandomItemSpawn : MonoBehaviour
 {
+    //editforpush
     [SerializeField] GameObject[] spawnPoints;
     [Tooltip("Make sure Shotgun is in pos 0 of array and Boxing Glove is in pos 1 of array")]
     [SerializeField] GameObject[] items;
