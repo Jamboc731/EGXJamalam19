@@ -58,9 +58,11 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("player " + playerNo + " fired");
 
-        if (equipped != null) equipped.Fire(transform.position, firePoint.transform);
-        rb.AddForce(-transform.right * equipped.GetFireForce());
-
+        if (equipped != null)
+        {
+            equipped.Fire(transform.position, firePoint.transform);
+            rb.AddForce(-transform.right * equipped.GetFireForce());
+        }
     }
 
     public void Toot()
