@@ -17,16 +17,10 @@ public class Score : MonoBehaviour
 
     private int[] cachedScore;
 
-    private void Start()
-    {
-        cachedScore[0] = playerLives[0];
-        cachedScore[1] = playerLives[1];
-    }
-
-    public int LoseLife(int playerNo, int livesToLose)
+    public void LoseLife(int playerNo, int livesToLose)
     {
         playerLives[playerNo] -= livesToLose;
-        return playerLives[playerNo];
+        Debug.Log(playerLives);
     }
 
     public void Lose(int playerToLose, int playerToWin)
@@ -41,12 +35,7 @@ public class Score : MonoBehaviour
 
     public int GetCurrentLives(int player)
     {
+        Debug.Log("Getting Lives" + playerLives[player]);
         return playerLives[player];
-    }
-
-    public void Reset()
-    {
-        playerLives[0] = cachedScore[0];
-        playerLives[1] = cachedScore[1];
     }
 }
