@@ -82,4 +82,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Adds "val" to FartsInChamber 
+    /// </summary>
+    /// <param name="val"></param>
+    public void AddToChamber(int val)
+    {
+        fartsInChamber += val;
+    }
+
 }
