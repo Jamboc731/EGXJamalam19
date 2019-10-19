@@ -129,7 +129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.48
+      value: 4.82
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
       propertyPath: m_LocalPosition.z
@@ -235,15 +235,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff1fdbbc73a08a4599506ded3b2d06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireForce: 5
+  fireForce: 400
   forceRatio: 0.25
   model: {fileID: 100000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
-  projectileCount: 8
+  projectileCount: 15
   pLifetime: 1
-  spread: 0
+  spread: 45
   projectilePrefab: {fileID: 5710825236299878077, guid: 27f76368d7c794949aba7712889c8427,
     type: 3}
-  firePoint: {fileID: 1212493891}
+  firePoint: {x: -0.25, y: -0.4, z: 0}
 --- !u!4 &429059521
 Transform:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429059519}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.02, y: 7.82, z: -0.08203125}
+  m_LocalPosition: {x: -1.44, y: 1.46, z: -0.08203125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 236184472}
@@ -886,7 +886,6 @@ GameObject:
   - component: {fileID: 1096990908}
   - component: {fileID: 1096990907}
   - component: {fileID: 1096990906}
-  - component: {fileID: 1096990909}
   m_Layer: 0
   m_Name: tempblackhole
   m_TagString: Untagged
@@ -979,18 +978,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096990904}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1096990909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096990904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25716254b95d56f4aa8546e6cb7623b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1207954764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,7 +1071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212493890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.08, y: 0.86, z: 0}
+  m_LocalPosition: {x: -0.25, y: -0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 429059521}
@@ -1310,7 +1297,6 @@ GameObject:
   - component: {fileID: 1475637860}
   - component: {fileID: 1475637859}
   - component: {fileID: 1475637858}
-  - component: {fileID: 1475637861}
   m_Layer: 0
   m_Name: tempblackhole
   m_TagString: Untagged
@@ -1403,18 +1389,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475637856}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1475637861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475637856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25716254b95d56f4aa8546e6cb7623b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1552487981 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 492433873524927137, guid: d8885c1f4844ee342aca1c2e3a9891f8,

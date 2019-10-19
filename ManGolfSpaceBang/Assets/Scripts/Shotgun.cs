@@ -18,24 +18,25 @@ public class Shotgun : Weapon
     [SerializeField] GameObject projectilePrefab;
 
     [Tooltip("The point that the projectiles will originate from")]
-    [SerializeField] Transform firePoint;
+    [SerializeField] Vector3 firePoint;
 
     Rigidbody2D pRb; //projectile rb
     Transform pT; // projectile transform
 
-    public override void Fire()
+    public override void Fire(Vector3 pos, Quaternion rot)
     {
-        base.Fire();
+        base.Fire(pos, rot);
 
         for (int i = 0; i < projectileCount; i++)
         {
-            //pT = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity).transform;
-            //pRb = pT.GetComponent<Rigidbody2D>();
+            pT = Instantiate(projectilePrefab, pos + firePoint, transform.rotation).transform;
+            Destroy(pT.gameObject, pLifetime);
+            //Debug.Log(pRb);
+            //Debug.Log((firePoint + (firePoint * (spread / 45))).normalized);
+            //transform.rotation = Quaternion.AngleAxis(Random.Range(-spread/2, spread/2), Vector3.forward);
+            pT.GetComponent<Projectile>().Fired(fireForce * (1 - forceRatio), (transform.right + (transform.up * spread /45 )).normalized);
+            //Debug.Log(pT.forward * fireForce * (1 - forceRatio));
 
-            //transform.rotation = Quaternion.LookRotation((firePoint.right + (firePoint.up * (spread / 45))).normalized);
-
-            //pRb.AddForce(pT.forward * fireForce * (1-forceRatio), ForceMode2D.Impulse);
-            
 
         }
 

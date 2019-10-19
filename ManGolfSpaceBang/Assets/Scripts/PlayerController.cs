@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    int fartsInChamber = 3;
+    [SerializeField] int fartsInChamber = 3;
 
     [Tooltip("The force exerted on the player when they do a cute lil toot in their soot")]
     [SerializeField] float tootForce;
@@ -54,7 +54,8 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("player " + playerNo + " fired");
 
-        if (equipped != null) equipped.Fire(); 
+        if (equipped != null) equipped.Fire(transform.position, transform.rotation);
+        rb.AddForce(-transform.right * equipped.GetFireForce());
 
     }
 
