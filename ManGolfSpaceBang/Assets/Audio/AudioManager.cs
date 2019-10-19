@@ -28,6 +28,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         PlayBGM();
+        m_BGMSource.loop = true;
     }
 
     //Call this with AudioManager.instance.PlayAudio(GetComponent<AudioSource>(), [audio clip]);
