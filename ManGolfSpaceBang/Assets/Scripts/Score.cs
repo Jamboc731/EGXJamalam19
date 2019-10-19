@@ -6,7 +6,7 @@ using System.Text;
 
 public class Score : MonoBehaviour
 {
-    //editforpush
+    //editforpushpleaseeeee
     public GameObject[] players;
     public int[] playerLives = { 3, 3 };
     public string[] playerName = { "Billy Bob", "Bob Billy" };

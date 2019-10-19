@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TempColdeath : MonoBehaviour
 {
-    //editforpush
+    //editforpushpleaseeeee
     [SerializeField] GameObject[] playerSpawns;
     [SerializeField] Score score;
     [SerializeField] RandomItemSpawn spawn;
