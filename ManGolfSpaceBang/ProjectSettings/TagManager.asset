@@ -8,6 +8,7 @@ TagManager:
   - WeaponPickup
   - Player1
   - Player2
+  - Shotty
   layers:
   - Default
   - TransparentFX

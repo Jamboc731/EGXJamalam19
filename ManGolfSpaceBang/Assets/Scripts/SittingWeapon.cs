@@ -6,10 +6,17 @@ using UnityEngine;
 public class SittingWeapon : MonoBehaviour, Pickupable
 {
 
-    [SerializeField] Weapon wep; 
+    [SerializeField] Weapon wep;
+    [SerializeField] string weaponToBe;
+
+    private void Start()
+    {
+        wep = GameObject.FindGameObjectsWithTag(weaponToBe)[0].GetComponent<Weapon>();
+    }
 
     public void AssignWeapon(Weapon w)
     {
+        //wep = GameObject.FindGameObjectsWithTag(weaponToBe)[0].GetComponent<Weapon>();
         wep = w;
     }
 

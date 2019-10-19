@@ -55,7 +55,7 @@ public class TempColdeath : MonoBehaviour
     {
         score.players[0].SetActive(true);
         score.players[1].SetActive(true);
-        spawn.SpawnObjects();
         roundOverPanel.SetActive(false);
+        spawn.SpawnObjects();
     }
 }
