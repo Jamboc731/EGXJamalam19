@@ -1,38 +1,20 @@
 fileFormatVersion: 2
-guid: 0e3cdb0e60f0b3247841a19dba209dab
+guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Low:RedNeckBody1
-    100002: Low:RedneckEye
-    100004: Low:RedneckEye1
-    100006: //RootNode
-    100008: Low:Helm
-    400000: Low:RedNeckBody1
-    400002: Low:RedneckEye
-    400004: Low:RedneckEye1
-    400006: //RootNode
-    400008: Low:Helm
+    100000: //RootNode
+    400000: //RootNode
     2100000: lambert1
-    2100002: Low_lambert1
-    2300000: Low:RedNeckBody1
-    2300002: Low:RedneckEye
-    2300004: Low:RedneckEye1
-    2300006: Low:Helm
-    3300000: Low:RedNeckBody1
-    3300002: Low:RedneckEye
-    3300004: Low:RedneckEye1
-    3300006: Low:Helm
-    4300000: Low:RedneckEye
-    4300002: Low:RedNeckBody1
-    4300004: Low:RedneckEye1
-    4300006: Low:Helm
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Low:Shotgun
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert1
-    second: {fileID: 2100000, guid: b1ac59ccd1fb90d458d2c4978026a78a, type: 2}
+    second: {fileID: 2100000, guid: 750b93bab0cb0194aa27e5ed9980e202, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

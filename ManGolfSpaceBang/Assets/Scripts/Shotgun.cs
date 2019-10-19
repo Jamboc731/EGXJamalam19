@@ -29,12 +29,12 @@ public class Shotgun : Weapon
 
         for (int i = 0; i < projectileCount; i++)
         {
-            pT = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity).transform;
-            pRb = pT.GetComponent<Rigidbody2D>();
+            //pT = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity).transform;
+            //pRb = pT.GetComponent<Rigidbody2D>();
 
-            transform.rotation = Quaternion.LookRotation((firePoint.right + (firePoint.up * (spread / 45))).normalized);
+            //transform.rotation = Quaternion.LookRotation((firePoint.right + (firePoint.up * (spread / 45))).normalized);
 
-            pRb.AddForce(pT.forward * fireForce * (1-forceRatio), ForceMode2D.Impulse);
+            //pRb.AddForce(pT.forward * fireForce * (1-forceRatio), ForceMode2D.Impulse);
             
 
         }

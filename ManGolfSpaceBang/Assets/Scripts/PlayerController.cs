@@ -68,4 +68,13 @@ public class PlayerController : MonoBehaviour
         equipped = pickedUp;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Pickupable a = collision.gameObject.GetComponent<Pickupable>();
+        if (a != null)
+        {
+            PickUp(a.PickedUp());
+        }
+    }
+
 }
