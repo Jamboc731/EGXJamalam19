@@ -14,7 +14,7 @@ public class Weapon : MonoBehaviour
     [Tooltip("The model that this weapon will use")]
     [SerializeField] protected GameObject model;
 
-    public virtual void Fire()
+    public virtual void Fire(Vector3 pos, Quaternion rot)
     {
         Debug.Log(gameObject.name + " was fired");
     }
