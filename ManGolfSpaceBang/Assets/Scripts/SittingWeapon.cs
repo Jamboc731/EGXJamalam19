@@ -6,7 +6,7 @@ using UnityEngine;
 public class SittingWeapon : MonoBehaviour, Pickupable
 {
 
-    Weapon wep;
+    [SerializeField] Weapon wep; 
 
     public void AssignWeapon(Weapon w)
     {
