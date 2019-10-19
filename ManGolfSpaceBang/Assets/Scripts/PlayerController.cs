@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
         fire = string.Concat(playerNo, "Fire");
         toot = string.Concat(playerNo, "Toot");
 
+        rb.angularDrag = 0;
     }
 
     private void Update()
