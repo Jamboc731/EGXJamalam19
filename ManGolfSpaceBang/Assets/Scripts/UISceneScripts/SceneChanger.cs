@@ -51,6 +51,7 @@ public class SceneChanger : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+        AudioManager.instance.PlayBGM();
     }
 
     public void Quit()
