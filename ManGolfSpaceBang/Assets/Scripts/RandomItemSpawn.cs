@@ -22,14 +22,14 @@ public class RandomItemSpawn : MonoBehaviour
 
         for (int i = 0; i < spawnPoints.Length; i++)
         {
-            if (i == 0)
+            /*if (i == 0)
             {
                 int randomSpawn = Random.Range(0, spawnPoints.Length);
                 Instantiate(items[0], spawnPoints[randomSpawn].transform);
-                /*if (items[0].transform.childCount > 1)
+                if (items[0].transform.childCount > 1)
                 {
                     Destroy(items[0]);
-                }*/
+                }
             }
             else if (i == 1)
             {
@@ -39,10 +39,10 @@ public class RandomItemSpawn : MonoBehaviour
                 /*if (items[1].transform.childCount > 1)
                 {
                     Destroy(items[1]);
-                }*/
-            }
-            else if (i != 1 || i != 2)
-            {
+                }
+            }*/
+            /*else if (i != 1 || i != 2)
+            {*/
                 for (int j = 0; j < spawnPoints.Length; j++)
                 {
                     int randomItem = Random.Range(0, items.Length);
@@ -54,7 +54,7 @@ public class RandomItemSpawn : MonoBehaviour
                     }*/
 
                 }
-            }
+            //}
         }
     }
 

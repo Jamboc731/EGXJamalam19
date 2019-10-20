@@ -27,6 +27,7 @@ public class Score : MonoBehaviour
 
     public void Lose(int playerToLose)
     {
+        Time.timeScale = 0;
         //int randomInsult = Random.Range(0, insults.Length);
         if(playerToLose == 0)
         {
@@ -47,6 +48,7 @@ public class Score : MonoBehaviour
 
     public void PlayAgain()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
 

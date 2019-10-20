@@ -31,6 +31,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Low_lambert1
+    second: {fileID: 2100000, guid: 594cb8799e5d4b84fbc5c8e8706efbb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: lambert1
     second: {fileID: 2100000, guid: b1ac59ccd1fb90d458d2c4978026a78a, type: 2}
   materials:
