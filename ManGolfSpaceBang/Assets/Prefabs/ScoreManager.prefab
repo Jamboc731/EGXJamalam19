@@ -46,7 +46,7 @@ MonoBehaviour:
   players:
   - {fileID: 0}
   - {fileID: 0}
-  playerLives: 0300000003000000
+  playerLives: 0000000000000000
   playerName:
   - Billy-Bob
   - Billy-Joe
@@ -56,5 +56,5 @@ MonoBehaviour:
   - insult
   - insult
   losePanel: {fileID: 0}
-  winTextBox: {fileID: 0}
-  loseTextBox: {fileID: 0}
+  player1Win: {fileID: 0}
+  player2Win: {fileID: 0}

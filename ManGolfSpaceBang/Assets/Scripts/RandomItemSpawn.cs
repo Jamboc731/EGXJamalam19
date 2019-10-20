@@ -43,13 +43,17 @@ public class RandomItemSpawn : MonoBehaviour
             }
             else if (i != 1 || i != 2)
             {
-                int randomItem = Random.Range(0, items.Length);
-                int randomSpawn = Random.Range(0, spawnPoints.Length);
-                GameObject ItemToSpawn = Instantiate(items[randomItem], spawnPoints[randomSpawn].transform) as GameObject;
-                /*if (spawnPoints[randomSpawn].transform.childCount > 1)
+                for (int j = 0; j < spawnPoints.Length; j++)
                 {
-                    Destroy(spawnPoints[randomItem].transform.GetChild(0));
-                }*/
+                    int randomItem = Random.Range(0, items.Length);
+                    int randomSpawn = Random.Range(0, spawnPoints.Length);
+                    GameObject ItemToSpawn = Instantiate(items[randomItem], spawnPoints[randomSpawn].transform) as GameObject;
+                    /*if (spawnPoints[randomSpawn].transform.childCount > 1)
+                    {
+                        Destroy(spawnPoints[randomItem].transform.GetChild(0));
+                    }*/
+
+                }
             }
         }
     }
@@ -58,7 +62,7 @@ public class RandomItemSpawn : MonoBehaviour
     {
         GameObject[] destroyableWeapon = GameObject.FindGameObjectsWithTag("WeaponPickup");
         GameObject[] destroyableItem = GameObject.FindGameObjectsWithTag("Item");
-        foreach(GameObject item in destroyableWeapon)
+        foreach (GameObject item in destroyableWeapon)
         {
             Destroy(item);
         }
