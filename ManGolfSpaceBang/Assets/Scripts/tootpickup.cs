@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tootpickup : MonoBehaviour
+public class tootpickup : MonoBehaviour
 {
     int numberOfToots;
 
