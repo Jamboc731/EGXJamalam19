@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Text;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
-    //editforpushpleaseeeee
+    //editforpushpleaseeee0
     public GameObject[] players;
     public int[] playerLives = { 3, 3 };
     public string[] playerName = { "Billy Bob", "Bob Billy" };
     public string winText;
     [TextArea] public string[] insults;
     public GameObject losePanel;
-    public Text winTextBox;
-    public Text loseTextBox;
+    public GameObject player1Win;
+    public GameObject player2Win;
 
     private int[] cachedScore;
 
@@ -24,19 +25,33 @@ public class Score : MonoBehaviour
         Debug.Log(playerLives);
     }
 
-    public void Lose(int playerToLose, int playerToWin)
+    public void Lose(int playerToLose)
     {
-        int randomInsult = Random.Range(0, insults.Length);
-        StringBuilder winner = new StringBuilder(playerName[playerToWin] + winText);
-        StringBuilder loser = new StringBuilder(playerName[playerToLose] + insults[randomInsult]);
+        //int randomInsult = Random.Range(0, insults.Length);
+        if(playerToLose == 0)
+        {
+            player1Win.SetActive(true);
+        }
+        else if (playerToLose == 1)
+        {
+            player2Win.SetActive(true);
+        }
         losePanel.SetActive(true);
-        winTextBox.text = winner.ToString();
-        loseTextBox.text = loser.ToString();
     }
 
     public int GetCurrentLives(int player)
     {
         Debug.Log("Getting Lives" + playerLives[player]);
         return playerLives[player];
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

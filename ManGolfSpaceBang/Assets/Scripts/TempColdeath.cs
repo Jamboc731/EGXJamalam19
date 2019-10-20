@@ -14,33 +14,27 @@ public class TempColdeath : MonoBehaviour
     {
         if (other.gameObject.tag == "Player1")
         {
-            if (score.GetCurrentLives(0) > 0)
+            /*if (score.GetCurrentLives(0) > 0)
             {
                 PlayerOut(0);
                 roundOverPanel.SetActive(true);
             }
             else if (score.GetCurrentLives(0) == 0)
-            {
-                other.gameObject.SetActive(false);
-                score.Lose(0, 1);
-            }
+            {*/
+            other.gameObject.SetActive(false);
+            score.Lose(0);
+            //}
         }
         else if (other.gameObject.tag == "Player2")
         {
-            if (score.GetCurrentLives(1) > 0)
-            {
-                PlayerOut(1);
-                roundOverPanel.SetActive(true);
-            }
-            else if (score.GetCurrentLives(1) == 0)
-            {
-                other.gameObject.SetActive(false);
-                score.Lose(1, 0);
-            }
+
+            other.gameObject.SetActive(false);
+            score.Lose(1);
         }
     }
+}
 
-    private void PlayerOut(int loser)
+    /*private void PlayerOut(int loser)
     {
         score.players[0].SetActive(false);
         score.players[1].SetActive(false);
@@ -49,13 +43,12 @@ public class TempColdeath : MonoBehaviour
         score.players[1].transform.position = playerSpawns[1].transform.position;
         score.players[1].transform.rotation = Quaternion.identity;
         score.LoseLife(loser, 1);
-    }
+    }*/
 
-    public void NextRound()
+    /*public void NextRound()
     {
         score.players[0].SetActive(true);
         score.players[1].SetActive(true);
         roundOverPanel.SetActive(false);
         spawn.SpawnObjects();
-    }
-}
+    }*/

@@ -263,10 +263,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 429059521}
     m_Modifications:
-    - target: {fileID: 100000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
-      propertyPath: m_Name
-      value: Shotgun
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.97
@@ -310,6 +306,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
+      propertyPath: m_Name
+      value: Shotgun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
@@ -365,7 +365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &255151623
 RectTransform:
   m_ObjectHideFlags: 0
@@ -824,10 +824,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1498427718}
     m_Modifications:
-    - target: {fileID: 100000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
-      propertyPath: m_Name
-      value: Shotgun
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -871,6 +867,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
+      propertyPath: m_Name
+      value: Shotgun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e0ab87fb2e1b24db6c1dd4b485e6ca, type: 3}
@@ -1728,7 +1728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1208740574
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2198,7 +2198,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1451356040}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1082920261}
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1451356040
@@ -2346,26 +2357,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4460174739091706231, guid: 3e978f990e7f8c0418ca32ba3621295f,
         type: 3}
-      propertyPath: players.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4460174739091706231, guid: 3e978f990e7f8c0418ca32ba3621295f,
-        type: 3}
-      propertyPath: losePanel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4460174739091706231, guid: 3e978f990e7f8c0418ca32ba3621295f,
-        type: 3}
-      propertyPath: winTextBox
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4460174739091706231, guid: 3e978f990e7f8c0418ca32ba3621295f,
-        type: 3}
-      propertyPath: loseTextBox
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4460174739091706231, guid: 3e978f990e7f8c0418ca32ba3621295f,
-        type: 3}
       propertyPath: players.Array.data[0]
       value: 
       objectReference: {fileID: 637315234}
@@ -2374,6 +2365,21 @@ PrefabInstance:
       propertyPath: players.Array.data[1]
       value: 
       objectReference: {fileID: 1552487981}
+    - target: {fileID: 4460174739091706231, guid: 3e978f990e7f8c0418ca32ba3621295f,
+        type: 3}
+      propertyPath: losePanel
+      value: 
+      objectReference: {fileID: 255151622}
+    - target: {fileID: 4460174739091706231, guid: 3e978f990e7f8c0418ca32ba3621295f,
+        type: 3}
+      propertyPath: player1Win
+      value: 
+      objectReference: {fileID: 1851321894}
+    - target: {fileID: 4460174739091706231, guid: 3e978f990e7f8c0418ca32ba3621295f,
+        type: 3}
+      propertyPath: player2Win
+      value: 
+      objectReference: {fileID: 1208740573}
     - target: {fileID: 4460174739091706230, guid: 3e978f990e7f8c0418ca32ba3621295f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2582,7 +2588,7 @@ MonoBehaviour:
   - {fileID: 2057965973}
   - {fileID: 1394828014}
   score: {fileID: 1082920261}
-  spawn: {fileID: 0}
+  spawn: {fileID: 697342869}
   roundOverPanel: {fileID: 255151622}
 --- !u!1 &1498427715
 GameObject:
@@ -2766,7 +2772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1851321895
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3413,8 +3419,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1475637861}
-        m_MethodName: NextRound
+      - m_Target: {fileID: 1082920261}
+        m_MethodName: PlayAgain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
