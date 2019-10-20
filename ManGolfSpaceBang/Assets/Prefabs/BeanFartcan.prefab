@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9067720341304591706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75217146, y: -0.08731264, z: 0.11152048}
+  m_LocalPosition: {x: -0.75217146, y: -0.08731264, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9067720341980685782}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 9067720341980685782}
   - component: {fileID: 9067720341980685770}
   - component: {fileID: 9067720341980685768}
-  - component: {fileID: 9067720341980685783}
+  - component: {fileID: 2865785906660429239}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -86,10 +86,10 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000005960465, y: -0.00000023841858}
+  m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0000002, y: 2.0000002}
   m_Direction: 0
---- !u!114 &9067720341980685783
+--- !u!114 &2865785906660429239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7ceba940f995aaf4e8b03da210d6a487, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.11152
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7ceba940f995aaf4e8b03da210d6a487, type: 3}
       propertyPath: m_LocalRotation.x

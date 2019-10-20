@@ -29,10 +29,13 @@ public class PlayerController : MonoBehaviour
     string fire;
     string toot;
 
-    Weapon equipped;
+    [SerializeField] Weapon equipped;
 
     private void Start()
     {
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         rb = GetComponent<Rigidbody2D>();
         hor = string.Concat(playerNo, "Horizontal");
@@ -40,6 +43,9 @@ public class PlayerController : MonoBehaviour
         toot = string.Concat(playerNo, "Toot");
 
         rb.angularDrag = 0;
+
+        PickUp(equipped);
+
     }
 
     private void Update()

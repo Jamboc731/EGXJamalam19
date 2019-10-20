@@ -43,17 +43,14 @@ public class RandomItemSpawn : MonoBehaviour
             }*/
             /*else if (i != 1 || i != 2)
             {*/
-                for (int j = 0; j < spawnPoints.Length; j++)
-                {
-                    int randomItem = Random.Range(0, items.Length);
-                    int randomSpawn = Random.Range(0, spawnPoints.Length);
-                    GameObject ItemToSpawn = Instantiate(items[randomItem], spawnPoints[randomSpawn].transform) as GameObject;
-                    /*if (spawnPoints[randomSpawn].transform.childCount > 1)
-                    {
-                        Destroy(spawnPoints[randomItem].transform.GetChild(0));
-                    }*/
+            int randomItem = Random.Range(0, items.Length);
+            int randomSpawn = Random.Range(0, spawnPoints.Length);
+            GameObject ItemToSpawn = Instantiate(items[randomItem], spawnPoints[randomSpawn].transform) as GameObject;
+            /*if (spawnPoints[randomSpawn].transform.childCount > 1)
+            {
+                Destroy(spawnPoints[randomItem].transform.GetChild(0));
+            }*/
 
-                }
             //}
         }
     }

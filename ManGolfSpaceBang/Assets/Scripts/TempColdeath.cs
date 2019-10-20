@@ -23,6 +23,8 @@ public class TempColdeath : MonoBehaviour
             {*/
             other.gameObject.SetActive(false);
             score.Lose(0);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             //}
         }
         else if (other.gameObject.tag == "Player2")
@@ -30,6 +32,8 @@ public class TempColdeath : MonoBehaviour
 
             other.gameObject.SetActive(false);
             score.Lose(1);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }
