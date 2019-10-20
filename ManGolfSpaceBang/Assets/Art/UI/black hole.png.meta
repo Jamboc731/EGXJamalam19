@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 2c70406d9346b8f4ea9f8453d82127e1
+guid: 7ce399caa804e3d4da9665bba313694d
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Player1and2_0
-    21300002: Player1and2_1
+    21300000: black hole_0
+    21300002: black hole_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -86,33 +86,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player1and2_0
+      name: black hole_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 605
-        width: 1911
-        height: 358
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f1b1589383a76e4ca008dbafca460af
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player1and2_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 123
-        width: 1920
-        height: 381
+        x: 31
+        y: 49
+        width: 902
+        height: 964
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,15 +100,51 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5296f19592945b4ea91f378e7351b71
+      spriteID: db28723341ff69d41b5a1398ca702e8f
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline: []
+    - serializedVersion: 2
+      name: black hole_1
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 55
+        width: 902
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc681f9906033146b227e578b117558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -931, y: 475}
+      - {x: -931, y: -395}
+      - {x: -911, y: -493}
+      - {x: -145, y: -493}
+      - {x: -25, y: -394}
+      - {x: -25, y: 439}
+      - {x: -210, y: 475}
+    - - {x: 160, y: 481}
+      - {x: 18, y: 374}
+      - {x: 18, y: -424}
+      - {x: 165, y: -487}
+      - {x: 804, y: -487}
+      - {x: 879, y: -476}
+      - {x: 924, y: -392}
+      - {x: 924, y: 469}
+      - {x: 828, y: 481}
     physicsShape: []
     bones: []
-    spriteID: 8664f1f7994be0544865f5a6f76b0a8a
+    spriteID: 314365fb4f05baa429a20dedb203703e
     vertices: []
     indices: 
     edges: []
